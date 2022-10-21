@@ -11,6 +11,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func botaoConfirmarPressionado(_ sender: UIButton) {
+        exibirAlertaDeConfirmacao()
+    }
+    
+    func exibirAlertaDeConfirmacao(){
         let alert = UIAlertController(title: "Tudo pronto", message: "Estamos verificando a transação.\n Em instantes você deve receber uma notificação com a confirmação da transferência. ", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
