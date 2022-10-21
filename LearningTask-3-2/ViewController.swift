@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    @IBAction func botaoConfirmarPressionado(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Tudo pronto", message: "Estamos verificando a transação.\n Em instantes você deve receber uma notificação com a confirmação da transferência. ", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 
-
+    
 }
 
